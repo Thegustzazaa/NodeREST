@@ -1,3 +1,8 @@
+//
+//
+//
+//
+//
 const express = require('express')
 const sqlite3 = require('sqlite3')
 const app = express()
@@ -79,7 +84,4 @@ app.delete('/books/:id',(req,res)=>{
 
 const port = process.env.PORT || 3000
 
-app.listen(port, () => {
-    console.log(`listening on port at http://localhost:${port}  ...`)
-})
-
+app.listen(port, () => console.log(`Listening on port ${port}...`));
