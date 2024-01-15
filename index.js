@@ -10,7 +10,7 @@ app.use(express.json())
 
                     // ไม่สร้างซ่ำ Table ชื่อ books
 db.run(`CREATE TABLE IF NOT EXISTS books( 
-    id INTEAGER PRIMARY KEY,
+    id INTEGER PRIMARY KEY,
     title TEXT,
     author TEXT
 )`)
